@@ -1,0 +1,63 @@
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+*~
+*.sw[mnpcod]
+.tmp
+*.tmp
+*.tmp.*
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+UserInterfaceState.xcuserstate
+$RECYCLE.BIN/
+
+*.log
+log.txt
+npm-debug.log*
+package-lock.json
+
+/.idea
+/.ionic
+/.sass-cache
+/.sourcemaps
+/.versions
+/.vscode/*
+!/.vscode/extensions.json
+/coverage
+/dist
+/node_modules
+/platforms
+/plugins
+/www
+/android
+/ios
+
+
+# Node
+node_modules/
+dist/
+build/
+
+# Capacitor
+ios/
+android/app/build/
+android/.gradle/
+android/.idea/
+android/local.properties
+
+# APKs (NO subir)
+*.apk
+
+# Signing keys (MUY IMPORTANTE NO SUBIR)
+*.jks
+*.keystore
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# VSCode / JetBrains
+.vscode/
+.idea/
