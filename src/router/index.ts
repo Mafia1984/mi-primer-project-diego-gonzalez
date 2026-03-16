@@ -59,6 +59,7 @@ const router = createRouter({
   routes
 })
 
+
 router.beforeEach((to, from) => {
   const userStore = useUserStore();
   const isAuthenticated = !!userStore.token;
@@ -66,6 +67,17 @@ router.beforeEach((to, from) => {
     return '/login';
   }else if(isAuthenticated && !to.meta.requiresAuth) {
     return '/seccion';
+
+router.beforeEach((to, from, next) => {
+  const userStore = useUserStore();
+  const isAuthenticated = !!userStore.token;
+  if(to.meta.requiresAuth && !isAuthenticated) {
+    next('/login');
+  }else if(isAuthenticated && !to.meta.requiresAuth) {
+    next('/seccion');
+  } else {
+    next();
+
   }
 });
 

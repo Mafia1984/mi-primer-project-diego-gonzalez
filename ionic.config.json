@@ -1,5 +1,11 @@
 {
   "name": "ionic-app-base-profe-3755",
+
   "integrations": {},
   "type": "vue-vite"
+=======
+  "app_id": "",
+  "type": "vue-vite",
+  "integrations": {}
+
 }

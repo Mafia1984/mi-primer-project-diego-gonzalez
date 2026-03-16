@@ -35,6 +35,7 @@ package-lock.json
 /ios
 
 
+
 # Node
 node_modules/
 dist/
@@ -61,3 +62,5 @@ Thumbs.db
 # VSCode / JetBrains
 .vscode/
 .idea/
+=======
+
